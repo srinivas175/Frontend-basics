@@ -22,6 +22,8 @@ start.addEventListener("click",clickFunction);
 
 function clickFunction() {
     start.disabled = true;
+    // getConfirmation("Hold on, Initializing");
+    getConfirmation("Start Speaking");
     setTimeout(() => {
         srt_button_class.toggle("fa-stop");
         if(srt_button_class.contains("fa-stop")){
@@ -35,11 +37,11 @@ function clickFunction() {
 }
 
 recognition.onstart = function() {
-getConfirmation("Hold on, Initializing");
+// getConfirmation("Hold on, Initializing");
 }
 
 recognition.onspeechstart = function() {
-getConfirmation("Start Speaking");
+// getConfirmation("Start Speaking");
 setTimeout(() => {
     start.disabled = false;
 }, 2000);   

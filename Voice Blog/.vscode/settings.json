@@ -1,0 +1,4 @@
+{
+    "npm-intellisense.showBuildInLibs": true,
+    "npm-intellisense.packageSubfoldersIntellisense": true
+}
